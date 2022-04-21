@@ -9,6 +9,7 @@ namespace logica
     public class Envio
     {
         public Random NumeroAleatorioEnvio { get; set; }
+        public int Valor { get; set; }
         public Destinatario Destinatario { get; set; }
         public Repartidor Repartidor { get; set; }
         public int Estado { get; set; }

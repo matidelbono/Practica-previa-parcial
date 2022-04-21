@@ -26,6 +26,19 @@
             return 0;
 
     }
-        public 
+        public bool ActualizarEnvio(Random numeroAleatorio, int EstadoActual)
+        {
+            foreach (var item in Envios)
+            {
+                if(item.Estado==EstadoActual & item.Estado=1)
+                {
+                    item.Repartidor.Comision = item.Valor * item.Repartidor.Comision;
+                    item.FechaEstimadaEntrega = item.FechaEntrega;
+                    return true;
+                }
+                return false;
+        }
+            
+}
     }
 }
